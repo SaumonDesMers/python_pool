@@ -9,8 +9,5 @@ if len(args) != 3 or not args[2].isdigit():
 for c in '.,?:;!-\'"':
     args[1] = args[1].replace(c, '')
 lst = args[1].split()
-lst2 = []
-for world in lst:
-    if len(world) > int(args[2]):
-        lst2.append(world)
+lst2 = [w for w in lst if len(w) > int(args[2])]
 print(lst2)

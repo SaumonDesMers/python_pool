@@ -1,4 +1,3 @@
 phrase = "The right format"
 
-txt = "{:->41}"
-print(txt.format(phrase))
+print("{:->41}".format(phrase))

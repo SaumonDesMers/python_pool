@@ -4,6 +4,5 @@ languages = {
     'PHP': 'Rasmus Lerdorf',
 }
 
-txt = "{} was created by {}"
 for key in languages:
-    print(txt.format(key, languages[key]))
+    print("{} was created by {}".format(key, languages[key]))

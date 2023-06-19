@@ -2,12 +2,10 @@ import sys
 
 
 def main():
-    if len(sys.argv) == 1:
-        return
-    arg = sys.argv[1]
-    if arg.isdigit() is False or len(sys.argv) > 2:
+    if len(sys.argv) != 2 or sys.argv[1].isdigit() is False:
         print("ERROR")
         return
+    arg = sys.argv[1]
     if int(arg) == 0:
         print("I'm Zero")
     elif int(arg) % 2 == 0:

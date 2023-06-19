@@ -41,7 +41,10 @@ morse = {
 
 msg = ' '.join(sys.argv[1:])
 
-if not msg.zfill(1).replace(' ', '0').isalnum():
+if len(msg) == 0:
+    exit()
+
+if not msg.replace(' ', '0').isalnum():
     print('Bad argument')
     exit()
 
